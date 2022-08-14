@@ -11,24 +11,28 @@ const NavData={
 
     0:{
         heading:"About Us",
-        data:["Our Profile","Leadership","Women Leaders","Vision&Values","Milestones"]
+        data:["Our Profile","Leadership","Women Leaders","Vision&Values","Milestones"],
+        icon:[""]
     },
     1:{
-        heading:"Businesses&Brands",
-        data:["Sustainability"]
+        heading:"Businesses & Brands",
+        data:["Sustainability"],
+        icon:[""]
     },
     2:{
         heading:"CSR",
-        data:["CSR At Sellebration","Bringing The Change","Our Strategy","Stories of Hope","CSR Policy"]
+        data:["CSR At Sellebration","Bringing The Change","Our Strategy","Stories of Hope","CSR Policy"],
+        icon:[""]
     },
     3:{
         heading:"Media",
-        data:["Media Releases","Media Reports","Stories","Events","Downloads","Our Logo"]
+        data:["Media Releases","Media Reports","Stories","Events","Downloads","Our Logo"],
+        icon:[""]
     },
     4:{
         heading:"",
         data:["Innovation","Investors","Careers","Contact Us"],
-        icon:[twitter,linkedin,insta,facebook,youtube]
+        icon:[twitter,linkedin,insta,facebook,youtube],
     }
 }
 

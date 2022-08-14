@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-// import {useState } from 'react';
+import {useState } from 'react';
 
 
 
@@ -18,11 +18,46 @@ import HomePage from './components/organism/HomePage/index';
 
 
 const App=(props)=>{
+
+
+  const [navDisplay,setNavDisplay]=useState({
+      nav:"none",
+      homepage:"block", 
+  });
+  const [flagState,setFlagState]=useState("homepage");
+
+  function openNav(x)
+  {
+    switch(x) {
+      case "homepage":
+        setNavDisplay({nav:"block",homepage:"none"});
+        setFlagState(x);
+        break;
+      default:
+        console.log("working fully");
+    }
+  }
+
+  function closeNav()
+  {
+    switch("nav") {
+      case "nav":
+        setNavDisplay({nav:"none",flagState:"block"});
+        setFlagState("nav");
+        break;
+      default:
+        console.log("working fully");
+    }
+  }
+
+
+
+
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>} ></Route>
+        <Route path="/" element={<HomePage navDisplay={navDisplay} openNav={openNav} closeNav={closeNav} />} ></Route>
       </Routes>
     </BrowserRouter>
     </>
