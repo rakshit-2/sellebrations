@@ -1,0 +1,3 @@
+HomePage - outer section for the '/' route of the web page. 
+Nav - outer section for the NavPanel or the sidePanel oppenend by clicking the nav bar expansion button
+NavBar - outer section for the nav bar being used on each page and used for opening the NavPanel or the sidePanel
