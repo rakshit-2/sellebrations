@@ -6,7 +6,7 @@
     width:100%;
     height:100vh;
     animation-name: fadeIn;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 .nav__inner::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -20,7 +20,7 @@
 }
 .nav__inner__navbar{
     width:100%;
-    height:10rem;
+    height:7rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
