@@ -23,6 +23,13 @@ const NavBar=(props)=>{
           <div className="navbar__right__search">
             <input type="text" placeholder="Search..." className="navbar__search__field"/>
           </div>
+          <div className="navbar__right__select">
+            <select className="navbar__language__select">
+              <option className="navbar__language__option">English</option>
+              <option className="navbar__language__option">German</option>
+              <option className="navbar__language__option">Polish</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
