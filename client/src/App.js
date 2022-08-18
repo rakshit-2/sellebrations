@@ -11,8 +11,8 @@ import {useState } from 'react';
 
 // all imports from the organism section
 import HomePage from './components/organism/HomePage/index';
-
-
+import OurProfile from './components/organism/OurProfile/index';
+import Leadership from './components/organism/Leadership/index';
 
 
 
@@ -58,6 +58,8 @@ const App=(props)=>{
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage navDisplay={navDisplay} openNav={openNav} closeNav={closeNav} />} ></Route>
+        <Route path="/OurProfile" element={<OurProfile/>} ></Route>
+        <Route path="/Leadership" element={<Leadership/>} ></Route>
       </Routes>
     </BrowserRouter>
     </>

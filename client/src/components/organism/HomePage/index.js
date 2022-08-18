@@ -8,6 +8,11 @@ const HomePage=(props)=>{
     <>
     <div className="home__outer" style={{backgroundColor:'#4F6DA1'}}>
       <NavBar navDisplay={props.navDisplay} openNav={props.openNav}  closeNav={props.closeNav}/>
+
+
+
+
+
     </div>
     
     </>
