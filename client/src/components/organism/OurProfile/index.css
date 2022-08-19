@@ -1,0 +1,181 @@
+.OurProfile__outer{
+    height: fit-content;
+    width: 100%;
+}
+.OurProfile__inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.OurProfile__about{
+width: 100%;
+height: 20rem;
+background-color: aqua;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+.OurProfile__about__left{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height:100%;
+    width: 45%;
+
+}
+.OurProfile__about__heading{
+align-items:flex-start;
+
+
+}
+.OurProfile__about__he{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    
+}
+/* .OurProfile__about__text{
+
+} */
+.OurProfile__about__right{
+    height:100%;
+    width:45%;
+    background-color:grey ;
+}
+.OurProfile__center__display{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #2F528E;
+    height: fit-content;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* border: 1px solid black; */
+}
+
+.OurProfile__center__head{
+    font-size:30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    /* border: 1px solid black; */
+}
+.OurProfile__center__list{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.OurProfile__center__card{
+    height:fit-content;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.OurProfile__center__pic{
+    height: 100px;
+    width:100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: pink;
+    /* border: 1px solid black; */
+}
+
+.OurProfile__center__card__each{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.OurProfile__center__card__info{
+    width: 100%;
+    height: fit-content;
+    font-size: 1rem;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.OurProfile__center__card__head{
+width: 100%;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 10px;
+/* padding:5px 0px 5px 0px; */
+}
+.OurProfile__team{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+
+}
+
+.OurProfile__team__heading{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+
+}
+
+.OurProfile__team__card{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.OurProfile__team__card__each{
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurProfile__team__card__pic{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    background-color: pink;
+    border: 1px solid black;
+}
+.OurProfile__team__card__title{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
