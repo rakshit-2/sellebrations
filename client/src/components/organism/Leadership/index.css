@@ -1,5 +1,8 @@
 .leadership__outer{
     width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height:fit-content;
 }
 .leadership__inner{
@@ -41,7 +44,7 @@
 
 .leadership__seaction1__innerheading{
     width:100%;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 4rem 0rem 4rem 0rem;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -52,6 +55,24 @@
     height:fit-content;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+@media screen and (min-width:1510px)
+{
+    .leadership__inner{
+        width:90%;
+    }
+}
+@media screen and (min-width:2000px)
+{
+    .leadership__inner{
+        width:60%;
+    }
+}
+@media screen and (min-width:2100px)
+{
+    .leadership__inner{
+        width:50%;
+    }
 }
