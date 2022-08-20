@@ -13,9 +13,8 @@ import {useState } from 'react';
 import HomePage from './components/organism/HomePage/index';
 import OurProfile from './components/organism/OurProfile/index';
 import Leadership from './components/organism/Leadership/index';
-
-
-
+import VisionValue from './components/organism/vision&value/index';
+import Milestone from './components/organism/milestone/index';
 
 const App=(props)=>{
 
@@ -58,8 +57,10 @@ const App=(props)=>{
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage navDisplay={navDisplay} openNav={openNav} closeNav={closeNav} />} ></Route>
-        <Route path="/OurProfile" element={<OurProfile/>} ></Route>
-        <Route path="/Leadership" element={<Leadership/>} ></Route>
+        <Route path="/our-profile" element={<OurProfile/>} ></Route>
+        <Route path="/leadership" element={<Leadership/>} ></Route>
+        <Route path="/vision-value" element={<VisionValue/>} ></Route>
+        <Route path="/milestone" element={<Milestone/>} ></Route>
       </Routes>
     </BrowserRouter>
     </>
