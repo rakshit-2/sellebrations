@@ -62,7 +62,13 @@ const NavData=[
             {id:2,info:"Careers"},
             {id:3,info:"Contact Us"}
         ],
-        icon:[twitter,linkedin,insta,facebook,youtube]
+        icon:[
+            {id:0,info:twitter,link:"https://twitter.com/i/flow/login"},
+            {id:1,info:linkedin,link:"https://in.linkedin.com/"},
+            {id:2,info:insta,link:"https://www.instagram.com/?hl=en"},
+            {id:3,info:facebook,link:"https://www.facebook.com/login/"},
+            {id:4,info:youtube,link:"https://www.youtube.com/account"},
+        ]
     }
 ]
 
