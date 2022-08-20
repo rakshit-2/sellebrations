@@ -14,7 +14,7 @@
 .nav__inner{
     width:100%;
     height:100%;
-    overflow-y: scroll;
+    overflow: hidden;
     background-position:center;
     background-image: url('./../../assets/images/nav_img/nav_background_img.svg');
 }

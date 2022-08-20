@@ -1,23 +1,26 @@
 import NavbarAboutus from '../../molecule/NavbarAboutus';
 import './index.css';
+import CardType2 from '../../atom/cardType2';
+import items from './../../assets/store/OurProfileData'
+
 
 
 const OurProfile=(props)=>{
 
-    // function display()
-    // {
-    //     var li=[];
-    //     var a=
-    //     <div style={{width:"100px",height:"200px",backgroundColor:"cyan"}}>
-    //         Leadership
-    //     </div>
-    //     for(var i=0;i<4;i++)
-    //     {
 
-    //         li.push(a);
-    //     }
-    //     return li;
-    // }
+
+    function displayValueCard()
+    {
+      var img_lis=items.img;
+      var name_lis=items.name;
+      var info_lis=items.info;
+      var li=[];
+      for(var i=0;i<img_lis.length;i++)
+      {
+        li.push(<CardType2 img={img_lis[i]} name={name_lis[i]} info={info_lis[i]}/>)
+      }
+      return li;
+    }
 
     return (
     <>
@@ -59,23 +62,11 @@ const OurProfile=(props)=>{
                     Our Values
                 </div>
                 <div className="OurProfile__center__list">
-                <div className="OurProfile__center__card">
-                    <div className="OurProfile__center__pic" >
-                        
-                    </div>
-                    
-                      <div className="OurProfile__center__card__head">
-                        Lorem Ipsum
-                      </div>
-                      <div className="OurProfile__center__card__info">
-                      Lorem Ipsum is simply dummy text 
-                  of the printing and typesetting industry.
-                   Lorem Ipsum has been the industry's 
-                    </div>
+                  {displayValueCard()}
                 </div>
-                </div>
-
               </div>
+  
+  
               <div className="OurProfile__team">
                   <div className="OurProfile__team__heading">
                       Our Team

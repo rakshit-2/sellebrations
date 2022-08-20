@@ -1,6 +1,6 @@
 import './index.css';
 import nav_close from './../../assets/images/nav_img/nav_cross_img.svg';
-import NavDetail from './../../molecule/navDetail/index'
+import NavLocator from './../../molecule/NavLocator/index'
 
 const Nav=(props)=>{
   return (
@@ -17,7 +17,7 @@ const Nav=(props)=>{
             </div>
           </div>
         </div>
-        <NavDetail/>
+        <NavLocator/>
       </div>
     </div>
     
