@@ -2,25 +2,11 @@ import NavbarAboutus from '../../molecule/NavbarAboutus';
 import './index.css';
 import CardType2 from '../../atom/cardType2';
 import items from './../../assets/store/OurProfileData'
-
-
+import logo from './../../assets/images/navbar_img/navbar_logo_img.svg';
+import CardType3 from '../../atom/cardType3';
 
 const OurProfile=(props)=>{
 
-
-
-    function displayValueCard()
-    {
-      var img_lis=items.img;
-      var name_lis=items.name;
-      var info_lis=items.info;
-      var li=[];
-      for(var i=0;i<img_lis.length;i++)
-      {
-        li.push(<CardType2 img={img_lis[i]} name={name_lis[i]} info={info_lis[i]}/>)
-      }
-      return li;
-    }
 
     return (
     <>
@@ -45,7 +31,9 @@ const OurProfile=(props)=>{
                   </div>
                 </div>
                 <div className="OurProfile__about__right">
-                    hello world
+                    <div className="OurProfile__about__right__inner">
+                      <img src={logo} className="OurProfile__about__right__inner__img"/>
+                    </div>
                 </div>
               </div>
 
@@ -56,28 +44,23 @@ const OurProfile=(props)=>{
                     Our Values
                 </div>
                 <div className="OurProfile__center__list">
-                  {displayValueCard()}
+                  <CardType2 items={items.ourValues}/>
                 </div>
               </div>
   
   
               <div className="OurProfile__team">
                   <div className="OurProfile__team__heading">
-                      Our Team
+                      Our team
                   </div>
                   <div className="OurProfile__team__card">
-                      <div className="OurProfile__team__card__each">
-                          <div className="OurProfile__team__card__title">
-                            job title
-                          </div>
-                          <div className="OurProfile__team__card__name">
-                            name
-                          </div>
-                          <div className="OurProfile__team__card__pic">
-
-                          </div>
-                      </div>
+                    <CardType3 items={items.ourTeam}/>
                   </div>
+              </div>
+              <div className="OurProfile__team__leaderboad">
+                <div className="OurProfile__team__leaderboad__button">
+                  View Leadership
+                </div>
               </div>
           </div>
         </div>
