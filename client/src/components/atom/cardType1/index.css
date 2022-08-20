@@ -63,7 +63,7 @@
         padding-right: 15px;
     }
 }
-@media screen and (max-width:518px)
+@media screen and (max-width:1043px)
 {
     .cardtype1__each__card{
         margin: 25px 0px 25px 0px;
@@ -71,6 +71,19 @@
         padding-right: 0px;
     }
 }
+@media screen and (max-width:767px)
+{
+    .cardtype1__each__card{
+        width:150px;
+    }
+}
+@media screen and (max-width:613px)
+{
+    .cardtype1__each__card{
+        width:230px;
+    }
+}
+
 @media screen and (max-width:426px)
 {
     .cardtype1__each__card{

@@ -16,9 +16,9 @@ const NavDetailEach=(props)=>{
 
     function navdisplayeach(val,key,icon)
     {
-        console.log(icon)
         var lis=[];
-        for(var j=0;j<val.length;j++)
+        var len=val[0];
+        for(var j=1;j<len;j++)
         {
             if(key===1)
             {
