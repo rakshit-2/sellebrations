@@ -1,16 +1,40 @@
 import './index.css';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const NavLocatorEach=(props)=>{
 
-    function iconDisplay(arr)
+    const navigate = useNavigate();
+
+
+    function onclickfunction(x,info)
     {
-        var lis=[];
-        for(var k=0;k<arr.length;k++)
+        var link=["","/our-profile","leadership","","/vision-value","milestone","Businesses & Brands","Sustainability","CSR",
+                "CSR At Sellebration","Bringing The Change","Our Strategy",
+                "Stories of Hope","CSR Policy","Media","Media Releases","Media Reports",
+                "Stories","Events","Downloads","Our Logo","Innovation","Investors",
+                "Careers","Contact Us"];
+        var check=["About Us","Our Profile","Leadership","Women Leaders","Vision&Values",
+                    "Milestones","Businesses & Brands","Sustainability","CSR",
+                    "CSR At Sellebration","Bringing The Change","Our Strategy",
+                    "Stories of Hope","CSR Policy","Media","Media Releases","Media Reports",
+                    "Stories","Events","Downloads","Our Logo","Innovation","Investors",
+                    "Careers","Contact Us"]
+            
+        for(var i=0;i<check.length;i++)
         {
-            lis.push(<img src={arr[k]} />)
+            if(info===check[i])
+            {
+                navigate(link[i]);
+                return;
+            }
+            
         }
-        return lis;
+        
     }
+
+
     return (
         <>
         {props.data.map((ele) => {
@@ -21,14 +45,21 @@ const NavLocatorEach=(props)=>{
                 {
                     return (
                         <>
-                        <div className="navdetail__each__heading">
+                        <div key={id} className="navlocatoreach__each__heading"  onClick={()=>{onclickfunction(id,info)}}>
                             {info}
                         </div>
-                        <div className="white__line__outer">
-                            <div className="white__line"></div>
+                        <div className="navlocatoreach__white__line__outer">
+                            <div className="navlocatoreach__white__line"></div>
                         </div>
-                        <div className="navdetail__each__heading" style={{display:"flex",alignItem:"center",justifyContent:"space-around",width:"80%"}}>
-                            {iconDisplay(props.icon)}
+                        <div className="navlocatoreach__each__heading" style={{display:"flex",alignItem:"center",justifyContent:"space-around",width:"80%"}}>
+                        {props.icon.map((elel) => {
+                            const {id,info,link}=elel;
+                            return (
+                                <>
+                                <a key={id} href={link}><img src={info} /></a>
+                                </>
+                            );
+                        })}
                         </div>
                         </>
                     );
@@ -37,11 +68,11 @@ const NavLocatorEach=(props)=>{
                 {
                     return (
                         <>
-                        <div className="navdetail__each__heading">
+                        <div key={id} className="navlocatoreach__each__heading"  onClick={()=>{onclickfunction(id,info)}}>
                             {info}
                         </div>
-                        <div className="white__line__outer">
-                            <div className="white__line"></div>
+                        <div className="navlocatoreach__white__line__outer">
+                            <div className="navlocatoreach__white__line"></div>
                         </div>
                         </>
                     );
@@ -51,7 +82,7 @@ const NavLocatorEach=(props)=>{
             {
                 return (
                     <>
-                    <div key={id} className="navdetaileach__each__each">
+                    <div key={id} className="navlocatoreach__each__each" onClick={()=>{onclickfunction(id,info)}}>
                         {info}
                     </div>
                     </>

@@ -15,7 +15,7 @@ const NavLocator=(props)=>{
                   {
                     return (
                         <>
-                        <div key={id} className="navdetail__each">
+                        <div key={id} className="navlocator__each">
                             <NavLocatorEach data={data} index={id} icon={icon}/>
                         </div>
                         </>
@@ -25,14 +25,16 @@ const NavLocator=(props)=>{
                   {
                     return (
                         <>
-                        <div key={id} className="navdetail__each">
-                            <div className="navdetail__each__heading">
+                        <div key={id} className="navlocator__each">
+                            <div className="navlocator__each__heading">
                                 {heading}
                             </div>
-                            <div className="white__line__outer">
-                                <div className="white__line"></div>
+                            <div className="navlocator__white__line__outer">
+                                <div className="navlocator__white__line"></div>
                             </div>
                             <NavLocatorEach data={data} index={id}/>
+                        </div>
+                        <div className='navlocator__white__line__nav'>
                         </div>
                         </>
                     );
