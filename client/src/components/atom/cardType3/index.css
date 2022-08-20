@@ -1,0 +1,39 @@
+
+
+.cardtype3__team__card__each{
+    
+    border: 2px solid #0AB1EE;
+    border-radius: 10px;
+    height: fit-content;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.cardtype3__team__card__pic{
+    margin-top:10px;
+    margin-bottom:30px;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+.cardtype3__team__card__pic__img{
+    width:100%;
+    height:100%;
+}
+.cardtype3__team__card__name{
+    margin-top: 5px;
+    color: #979797;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.cardtype3__team__card__title{
+    color: #9DADCA;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
