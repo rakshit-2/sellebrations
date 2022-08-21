@@ -66,14 +66,14 @@
     z-index: 10;
 }
 .milestone__display__inner__inner1{
-    width:50%;
+    width:750px;
     height:fit-content;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; 
 }
 .milestone__display__inner__inner2{
-    width:50%;
+    width:750px;
     height:fit-content;
     display: flex;
     align-items: center;
@@ -109,4 +109,114 @@
 .milestone__display__inner__inner__info{
     width:20rem;
     height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1510px)
+{
+    .milestone__inner{
+        width:90%;
+    }
+}
+@media screen and (min-width:2000px)
+{
+    .milestone__inner{
+        width:60%;
+    }
+}
+@media screen and (min-width:2400px)
+{
+    .milestone__inner{
+        width:51%;
+        
+    }
+}
+@media screen and (max-width:792px)
+{
+    .milestone__display__inner__inner1{
+        width:700px;
+    }
+    .milestone__display__inner__inner2{
+        width:700px;
+    }
+}
+@media screen and (max-width:733px)
+{
+    .milestone__display__inner__middle{
+        height:142rem;
+    }
+    .milestone__display__inner__inner1{
+        width:100%;
+        justify-content: center; 
+    }
+    .milestone__display__inner__inner2{
+        width:100%;
+        justify-content: center;
+    }
+    .milestone__display__inner__inner__ele{
+        display: none;
+    }
+    .milestone__display__inner__inner__right{
+        width:50%;
+        z-index: 10;
+    }
+    .milestone__display__inner__inner__left{
+        width:50%;
+        z-index: 10;
+    }
+    .milestone__display__inner__inner__info{
+        width:100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border:2px solid #2F528E;
+    }
+}
+@media screen and (max-width:633px)
+{
+    .milestone__display__inner__middle{
+        height:153rem;
+    }
+}
+@media screen and (max-width:578px)
+{
+    .milestone__display__inner__middle{
+        height:162rem;
+    }
+}
+
+@media screen and (max-width:561px)
+{
+    .milestone__display__inner__middle{
+        height:133rem;
+    }
+    .milestone__display__inner__inner__right{
+        width:95%;
+    }
+    .milestone__display__inner__inner__left{
+        width:95%;
+    }
+}
+@media screen and (max-width:415px)
+{
+    .milestone__display__inner__middle{
+        height:143rem;
+    }
+}
+@media screen and (max-width:333px)
+{
+    .milestone__display__inner__middle{
+        height:153rem;
+    }
 }
