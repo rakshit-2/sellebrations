@@ -11,7 +11,7 @@
 }
 .navlocatoreach__each__heading{
     margin-bottom: 10px;
-    width:100%;
+    width:90%;
     height:5rem;
     display: flex;
     word-wrap: break-word;
@@ -21,7 +21,9 @@
     font-size: 2rem;
     color: white;
     padding-left: 20px;
+    cursor:pointer;
 }
+
 .navlocatoreach__each__each{
     width:80%;
     height:3rem;
