@@ -15,6 +15,7 @@ import OurProfile from './components/organism/OurProfile/index';
 import Leadership from './components/organism/Leadership/index';
 import VisionValue from './components/organism/vision&value/index';
 import Milestone from './components/organism/milestone/index';
+import Csr from './components/organism/csr/index';
 
 const App=(props)=>{
 
@@ -61,6 +62,7 @@ const App=(props)=>{
         <Route path="/leadership" element={<Leadership/>} ></Route>
         <Route path="/vision-value" element={<VisionValue/>} ></Route>
         <Route path="/milestone" element={<Milestone/>} ></Route>
+        <Route path="/csr" element={<Csr/>} ></Route>
       </Routes>
     </BrowserRouter>
     </>
