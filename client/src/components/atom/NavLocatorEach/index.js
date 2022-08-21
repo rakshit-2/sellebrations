@@ -39,7 +39,16 @@ const NavLocatorEach=(props)=>{
         <>
         {props.data.map((ele) => {
             const {id,info}=ele;
-            if(props.index===4)
+            if(props.index===1)
+            {
+                return(
+                <div key={id} className="navlocatoreach__each__heading"  onClick={()=>{onclickfunction(id,info)}}>
+                    {info}
+                </div>
+                )
+                
+            }
+            else if(props.index===4)
             {
                 if(id===3)
                 {
@@ -51,7 +60,7 @@ const NavLocatorEach=(props)=>{
                         <div className="navlocatoreach__white__line__outer">
                             <div className="navlocatoreach__white__line"></div>
                         </div>
-                        <div className="navlocatoreach__each__heading" style={{display:"flex",alignItem:"center",justifyContent:"space-around",width:"80%"}}>
+                        <div className="navlocatoreach__each__heading" style={{display:"flex",alignItem:"center",justifyContent:"space-around",width:"88%" ,cursor:"default"}}>
                         {props.icon.map((elel) => {
                             const {id,info,link}=elel;
                             return (

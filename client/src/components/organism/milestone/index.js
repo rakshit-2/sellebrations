@@ -1,7 +1,6 @@
 import './index.css';
 import NavbarAboutus from './../../molecule/NavbarAboutus/index'
-import left from './../../assets/images/milestone_img/hand-finger-left-icon.svg'
-import right from './../../assets/images/milestone_img/hand-finger-right-icon.svg'
+import items from './../../assets/store/milestoneData';
 
 
 
@@ -21,70 +20,56 @@ const Milestone=(props)=>{
             </div>
           </div>
 
-          <div className="milestone__display__inner">
-            <div className="milestone__display__inner__middle"></div>
-            <div className="milestone__display__inner__heading__inner">
-              2022
-            </div>
-            <div className="milestone__display__inner__inner1">
-              <div className="milestone__display__inner__inner__right">
-                <div className="milestone__display__inner__inner__ele"></div>
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-              </div>
-            </div>
-            <div className="milestone__display__inner__inner2">
-              <div className="milestone__display__inner__inner__left">
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-                <div className="milestone__display__inner__inner__ele"></div>
-              </div>
-            </div>
-
-
-
-            <div className="milestone__display__inner__heading__inner">
-              2021
-            </div>
-            <div className="milestone__display__inner__inner1">
-              <div className="milestone__display__inner__inner__right">
-                <div className="milestone__display__inner__inner__ele"></div>
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-              </div>
-            </div>
-            <div className="milestone__display__inner__inner2">
-              <div className="milestone__display__inner__inner__left">
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-                <div className="milestone__display__inner__inner__ele"></div>
-              </div>
-            </div>
-            <div className="milestone__display__inner__inner1">
-              <div className="milestone__display__inner__inner__right">
-                <div className="milestone__display__inner__inner__ele"></div>
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-              </div>
-            </div>
-            <div className="milestone__display__inner__inner2">
-              <div className="milestone__display__inner__inner__left">
-                <div className="milestone__display__inner__inner__info">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
-                <div className="milestone__display__inner__inner__ele"></div>
-              </div>
-            </div>
-          </div>
+           <div className="milestone__display__inner">
+           <div className="milestone__display__inner__middle"></div>
+           {items.map((ele) => {
+            const {id,year,data}=ele;
+              return(
+                <>
+                  <div key={id} className="milestone__display__inner__heading__inner">
+                    {year}
+                  </div>
+                  {data.map((elel) => {
+                  const {id,info}=elel;
+                  console.log(id,info)
+                  if(id%2===0)
+                  {
+                    return(
+                      <>
+                      <div key={id} className="milestone__display__inner__inner1">
+                        <div className="milestone__display__inner__inner__right">
+                          <div className="milestone__display__inner__inner__ele"></div>
+                          <div className="milestone__display__inner__inner__info">
+                          {info}
+                          </div>
+                        </div>
+                      </div>
+                      </>
+                    )
+                  }
+                  else
+                  {
+                    return(
+                    <div key={id} className="milestone__display__inner__inner2">
+                      <div className="milestone__display__inner__inner__left">
+                        <div className="milestone__display__inner__inner__info">
+                        {info}
+                        </div>
+                        <div className="milestone__display__inner__inner__ele"></div>
+                      </div>
+                    </div>
+                    )
+                  }
+                  })}
+                </>
+              )
+            })}
+          </div> 
         </div>
       </div>
     </>
   );
+  
 }
 
 export default Milestone;

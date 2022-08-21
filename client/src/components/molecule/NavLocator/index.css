@@ -37,6 +37,7 @@
     font-size: 2rem;
     color: white;
     padding-left: 20px;
+    cursor:pointer;
 }
 .navlocator__white__line__outer{
     width:100%;
