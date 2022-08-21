@@ -1,5 +1,9 @@
 .csr__outer{
     width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     height:fit-content;
 }
 
@@ -37,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .csr__seaction1__left{
     width:40%;
@@ -143,7 +148,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 .csr__seaction3__inner{
     width:90%;
@@ -151,6 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .csr__seaction3__inner__left{
     width:45%;
@@ -179,3 +184,100 @@
     width:100%;
     height:100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1510px)
+{
+    .csr__inner{
+        width:90%;
+    }
+}
+@media screen and (min-width:2000px)
+{
+    .csr__inner{
+        width:60%;
+    }
+}
+@media screen and (min-width:2400px)
+{
+    .csr__inner{
+        width:51%;
+        
+    }
+}
+@media screen and (max-width:768px)
+{
+    .csr__seaction1__left{
+        width:100%;
+    }
+    .csr__seaction1__right{
+        width:100%;
+        margin-top: 2rem;
+    }
+    .csr__seaction3__inner__left{
+        width:100%;
+    }
+    .csr__seaction3__inner__right{
+        width:100%;
+        margin-top: 2rem;
+    }
+    .csr__heading__top{
+        font-size: 0.8rem;
+    }
+    .csr__heading__bottom{
+        font-size: 2rem;
+    }
+    .csr__section1__left__top{
+        font-size: 1rem;
+    }
+    .csr__collen{
+        font-size: 1rem;
+    }
+    
+    .csr__section1__left__bottom{
+        font-size: 1rem;
+    }
+    .csr__seaction2__heading{
+        font-size: 2rem;
+    }
+    .csr__seaction1__right__inner{
+        width:200px;
+        height:200px;
+    }
+    .csr__seaction3__inner__left{
+        font-size: 1rem;
+    }
+    .csr__seaction3__inner__right__inner{
+        width:200px;
+        height:200px;
+    }
+}
+@media screen and (max-width:464px)
+{
+    .csr__seaction2__each{
+        position: relative;
+        margin: auto;
+    }
+    
+}
+
+

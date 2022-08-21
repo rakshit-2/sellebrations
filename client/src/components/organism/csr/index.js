@@ -11,12 +11,17 @@ const Csr=(props)=>{
           slidesToSlide: 1 // optional, default to 1.
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 1024, min: 750 },
           items: 3,
           slidesToSlide: 1 // optional, default to 1.
         },
+        dev: {
+            breakpoint: { max: 749, min: 484 },
+            items: 2,
+            slidesToSlide: 1 // optional, default to 1.
+          },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 484, min: 0 },
           items: 1,
           slidesToSlide: 1 // optional, default to 1.
         }
