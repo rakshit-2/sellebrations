@@ -15,3 +15,7 @@ Great !! Keep working
 22-08-2022 3:06 PM { 
 I Found that you were asking for Searching Searching in navbar is for Related links and blog posts.
 }
+
+22-08-2022 3:29 PM { 
+Navbar of CSR is not responsive and add them in a Span
+}
