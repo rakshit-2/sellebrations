@@ -1,5 +1,6 @@
 import './index.css';
-import NavbarAboutus from './../../molecule/NavbarAboutus/index';
+// import NavbarAboutus from './../../molecule/NavbarAboutus/index';
+import Navbar from './../NavBar/index'
 import CardType1 from './../../atom/cardType1/index';
 import items from './../../assets/store/LeadershipData';
 
@@ -50,7 +51,7 @@ const Leadership=(props)=>{
     <>
     <div className="leadership__outer">
       <div className="leadership__inner">
-        <NavbarAboutus/>
+        <Navbar navDisplay={props.navDisplay} openNav={props.openNav}  closeNav={props.closeNav}/>
 
         <div className="leadership__seaction1">
           <div className="leadership__seaction1__heading">

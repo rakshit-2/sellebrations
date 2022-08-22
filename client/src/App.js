@@ -22,32 +22,17 @@ const App=(props)=>{
 
   const [navDisplay,setNavDisplay]=useState({
       nav:"none",
-      homepage:"block", 
+      nav1:"block",
   });
-  const [flagState,setFlagState]=useState("homepage");
 
   function openNav(x)
   {
-    switch(x) {
-      case "homepage":
-        setNavDisplay({nav:"block",homepage:"none"});
-        setFlagState(x);
-        break;
-      default:
-        console.log("working fully");
-    }
+    setNavDisplay({nav:"block",nav1:"none",});
   }
 
   function closeNav()
   {
-    switch("nav") {
-      case "nav":
-        setNavDisplay({nav:"none",flagState:"block"});
-        setFlagState("nav");
-        break;
-      default:
-        console.log("working fully");
-    }
+    setNavDisplay({nav:"none",nav1:"block",});
   }
 
 
@@ -59,7 +44,7 @@ const App=(props)=>{
       <Routes>
         <Route path="/" element={<HomePage navDisplay={navDisplay} openNav={openNav} closeNav={closeNav} />} ></Route>
         <Route path="/our-profile" element={<OurProfile/>} ></Route>
-        <Route path="/leadership" element={<Leadership/>} ></Route>
+        <Route path="/leadership" element={<Leadership navDisplay={navDisplay} openNav={openNav} closeNav={closeNav}/>} ></Route>
         <Route path="/vision-value" element={<VisionValue/>} ></Route>
         <Route path="/milestone" element={<Milestone/>} ></Route>
         <Route path="/csr" element={<Csr/>} ></Route>

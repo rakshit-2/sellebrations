@@ -11,14 +11,14 @@ import NavPanel from './../Nav/index';
 const NavBar=(props)=>{
   return (
     <>
-    <div className="navbar__outer" style={{display:props.navDisplay.homepage}}>
+    <div className="navbar__outer">
       <div className="navbar__inner">
         <div className="navbar__left">
           <img src={navbar_logo} className="navbar__logo" alt=""/>
         </div>
         <div className="navbar__right">
           <div className="navbar__right__icon">
-            <img src={navbar_icon} className="navbar__icon" alt="" onClick={()=>{props.openNav("homepage")}}/>
+            <img src={navbar_icon} className="navbar__icon" alt="" onClick={()=>{props.openNav()}}/>
           </div>
           <div className="navbar__right__search">
             <input type="text" placeholder="Search..." className="navbar__search__field"/>
