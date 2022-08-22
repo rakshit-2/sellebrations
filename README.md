@@ -10,3 +10,8 @@ but we were going ahead with atomic design model right...? then seprate folder i
 22-08-2022 3:00 PM { 
 Great !! Keep working 
 }
+
+
+22-08-2022 3:06 PM { 
+I Found that you were asking for Searching Searching in navbar is for Related links and blog posts.
+}
